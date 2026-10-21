@@ -6,6 +6,8 @@ studio develops the story, plans visuals, prepares narration and media, renders
 a review video, and assembles a publication package. A new topic is project data,
 not a new renderer or a new agent implementation.
 
+Outputs are uploaded here regularly - https://www.youtube.com/@CryoKnowledge
+
 This is an actively developed production tool, not an unattended publishing
 service. Human approval gates, technical checks, rights records and durable
 checkpoints are central to its design. Bugs and editorial limitations remain.
