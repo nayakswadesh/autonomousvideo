@@ -1,0 +1,83 @@
+schema_version: 2
+title: "How the Moon formed — and what remains uncertain"
+topic: "Explain the leading evidence for the Moon's formation and the questions scientists still debate."
+format: youtube_longform
+profile: longform_pilot
+duration_policy:
+  minimum_seconds: 180
+  target_seconds: 210
+  maximum_seconds: 240
+  expansion_maximum_seconds: 600
+aspect_ratio: "16:9"
+width: 1920
+height: 1080
+fps: 24
+audience: "curious adults without specialist astronomy knowledge"
+editorial_objective: "Build a clear, evidence-led explanation that distinguishes observations from unresolved models."
+viewer_promise: "By the end, viewers will understand why a giant impact is the leading explanation and why the details remain unsettled."
+central_question: "How did the Moon form, and which parts of that story are still uncertain?"
+research:
+  requirements:
+    - "Separate direct observations from model-dependent conclusions."
+    - "Use primary or authoritative scientific sources."
+  sources:
+    - id: nasa_moon_formation
+      title: "Moon Formation"
+      url: "https://science.nasa.gov/moon/formation/"
+      accessed: "2026-09-22"
+      evidence_notes: "NASA overview of the leading formation hypothesis and open questions."
+    - id: nasa_moon_facts
+      title: "Moon Facts"
+      url: "https://science.nasa.gov/moon/facts/"
+      accessed: "2026-09-22"
+      evidence_notes: "NASA overview of the Moon's age, composition and physical relationship with Earth."
+  claims:
+    - kind: qualitative
+      id: c1
+      text: "A collision between the early Earth and a large body is the leading framework for explaining the Moon's formation."
+      source_ids: [nasa_moon_formation]
+      confidence: 0.9
+      status: supported
+      caveat: "The impact geometry, sequence and material mixing remain active research questions."
+    - kind: qualitative
+      id: c2
+      text: "Samples returned by the Apollo missions helped establish that the Moon formed under extremely hot conditions."
+      source_ids: [nasa_moon_formation]
+      confidence: 0.9
+      status: supported
+      caveat: "Samples constrain formation models but do not uniquely determine one collision scenario."
+    - kind: qualitative
+      id: c3
+      text: "The Moon is thought to have formed about 4.5 billion years ago, early in solar-system history."
+      source_ids: [nasa_moon_facts]
+      confidence: 0.9
+      status: supported
+      caveat: "Age estimates are scientific measurements with uncertainty rather than an exact date."
+  subjects: []
+voice:
+  provider: mock
+  voice_id: timing-tone
+  style: "conversational science documentary"
+  pace_wpm: 150
+music:
+  mood: "curious, restrained and gradually expansive"
+  energy: low
+  tempo: 72
+  instrumentation: ["soft piano", "subtle strings", "ambient texture"]
+mix:
+  narration_priority: true
+visual_style:
+  background: "#101923"
+  foreground: "#f0efe8"
+  accent: "#eab878"
+audio_direction: "Begin intimate and restrained; widen gently as the evidence converges."
+ambience: true
+engagement_ending:
+  enabled: true
+  conclusion_bridge: "The broad outline is persuasive, but the exact collision remains an open scientific story."
+  subscribe_reason: "If you enjoy evidence-led science stories like this, subscribe."
+  comment_question: "Which unresolved part of the Moon's origin should a follow-up investigate?"
+  like_and_share_prompt: "If this made the evidence clearer, like the video and share it with someone who would enjoy it."
+  suggested_pinned_comment: "Which unresolved part of the Moon's origin should we investigate next?"
+  end_screen_target: "best_for_viewer"
+  planned_duration_seconds: 12

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-studio"
+version = "1.0.0"
+description = "Local, resumable audiovisual production studio with human approval gates"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "typer>=0.15,<1",
+    "PyYAML>=6,<7",
+    "Pillow>=11,<13",
+    "imageio-ffmpeg>=0.6,<0.7",
+    "resvg_py>=0.5,<0.6",
+    "google-api-python-client>=2.180,<3",
+    "google-auth-oauthlib>=1.2,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+studio = "autonomous_studio.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+autonomous_studio = ["assets/fonts/*", "assets/maps/*", "assets/branding/*", "assets/semantic/*.json", "assets/semantic/phosphor/LICENSE", "assets/semantic/phosphor/regular/*.svg", "assets/semantic/studio/*.svg", "assets/*.md"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = ["integration: real FFmpeg rendering and mixing"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

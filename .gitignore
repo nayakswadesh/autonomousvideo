@@ -1,0 +1,43 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+projects/
+build/
+dist/
+.env
+.env.*
+!.env.example
+secrets/
+examples/assets/*.mp3
+music/inbox/*.mp3
+music/inbox/*.m4a
+music/inbox/*.wav
+music/assets/*.mp3
+music/assets/*.m4a
+music/assets/*.wav
+
+# Local production, experiments, and reproducible test output are not source.
+/out/
+/.pytest*/
+/.test-run*/
+/tests/_tmp*/
+/cryo knowledge/
+/Start Telegram Worker.exe
+/music/
+/examples/visual-registry-previews/
+*.pyc
+*.pyo
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+
+# Never publish credentials, OAuth receipts, or private signing material.
+*.pem
+*.key
+*.p12
+*.pfx
+*oauth-client*.json
+*oauth-token*.json

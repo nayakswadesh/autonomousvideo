@@ -1,0 +1,34 @@
+schema_version: 1
+tracks:
+  - kind: music
+    id: absolution
+    file: assets/absolution.mp3
+    sha256: 4ce9617736bb1342ee697d4eba9286744f850b3b41d427707aee373fcbe75f95
+    tags: [reflective, ambient, neutral]
+    trim_start: 0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence_file: assets/absolution-license.md
+    provenance:
+      source: https://www.scottbuckley.com.au/library/absolution/
+      provider: Scott Buckley music library
+      asset_id: absolution
+      license_category: licensed
+      usage_restrictions: CC BY 4.0; include credit in video description; see license evidence.
+      attribution: "'Absolution' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au"
+      origin: library
+  - kind: music
+    id: resonance
+    file: assets/resonance.mp3
+    sha256: 264be9c44c32419b6de70f0ac24c92f81401419419c8fb111b8e19e62261331b
+    tags: [tense, ambient]
+    trim_start: 0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence_file: assets/resonance-license.md
+    provenance:
+      source: https://www.scottbuckley.com.au/library/resonance/
+      provider: Scott Buckley music library
+      asset_id: resonance
+      license_category: licensed
+      usage_restrictions: CC BY 4.0; include credit in video description; see license evidence.
+      attribution: "'Resonance' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au"
+      origin: library

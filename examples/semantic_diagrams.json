@@ -1,0 +1,130 @@
+[
+  {
+    "id": "volunteer-teams",
+    "topic": "Community response",
+    "narration": "Organizers recruited volunteers, trained them, divided them into teams, and sent each team to a field station.",
+    "title": "How volunteers reach the field",
+    "duration": 7,
+    "family": "process",
+    "treatment": "working",
+    "steps": [
+      {"label": "Recruit", "detail": "Bring people in", "anchor": "recruited volunteers", "symbol": "people", "at": 0.3},
+      {"label": "Train", "detail": "Prepare the team", "anchor": "trained them", "symbol": "book", "at": 1.7},
+      {"label": "Divide", "detail": "Form teams", "anchor": "divided them into teams", "symbol": "branch", "at": 3.1},
+      {"label": "Deploy", "detail": "Reach field stations", "anchor": "sent each team", "symbol": "pin", "at": 4.5}
+    ]
+  },
+  {
+    "id": "water-cycle",
+    "topic": "Water cycle",
+    "narration": "Surface water evaporates, water vapor forms clouds, and rain returns the water to the ground.",
+    "title": "Water changes form and returns",
+    "duration": 7,
+    "family": "process",
+    "treatment": "transformation",
+    "steps": [
+      {"label": "Surface water", "detail": "Water at ground level", "anchor": "Surface water", "symbol": "drop", "at": 0.3},
+      {"label": "Vapor", "detail": "Water in the air", "anchor": "water vapor forms clouds", "symbol": "cloud", "at": 2.0},
+      {"label": "Rain", "detail": "Water returns", "anchor": "rain returns", "symbol": "drop", "at": 4.2}
+    ]
+  },
+  {
+    "id": "greenhouse-hypotheses",
+    "topic": "Illustrative greenhouse trial",
+    "narration": "Shade was suspected of slowing growth. But shaded and unshaded beds both lagged, so soil nutrients became another hypothesis to test.",
+    "title": "One explanation no longer suffices",
+    "duration": 7,
+    "family": "evidence",
+    "treatment": "competing",
+    "expected": "Shade slows growth",
+    "observed": "Both beds grew poorly",
+    "inference": "Test the soil-nutrient hypothesis",
+    "expected_anchor": "Shade was suspected",
+    "observed_anchor": "shaded and unshaded beds both lagged",
+    "inference_anchor": "soil nutrients became another hypothesis",
+    "reveal_at": 2.5,
+    "inference_at": 4.5
+  },
+  {
+    "id": "pump-output",
+    "topic": "Hypothetical pump test",
+    "narration": "The pump was expected to move eighty liters per minute, but the test measured only fifty-two. The shortfall prompted an inspection.",
+    "title": "The pump missed its target",
+    "duration": 7,
+    "family": "evidence",
+    "treatment": "prediction",
+    "expected": "Expected output",
+    "observed": "Measured output",
+    "expected_anchor": "expected to move eighty liters",
+    "observed_anchor": "measured only fifty-two",
+    "inference_anchor": "shortfall prompted an inspection",
+    "expected_value": 80,
+    "observed_value": 52,
+    "unit": "L/min",
+    "inference": "The shortfall prompts inspection",
+    "reveal_at": 2.4,
+    "inference_at": 4.6
+  },
+  {
+    "id": "water-pump-parts",
+    "topic": "Pump schematic",
+    "narration": "Water enters through the inlet, passes through the pump body, and leaves through the outlet.",
+    "title": "Follow water through a pump",
+    "duration": 7,
+    "family": "cutaway",
+    "treatment": "guided",
+    "symbol": "pump",
+    "parts": [
+      {"label": "Inlet", "detail": "Water enters", "anchor": "inlet", "symbol": "drop", "x": 0.25, "y": 0.5, "at": 0.5},
+      {"label": "Pump body", "detail": "Flow is driven", "anchor": "pump body", "symbol": "pump", "x": 0.5, "y": 0.5, "at": 2.2},
+      {"label": "Outlet", "detail": "Water leaves", "anchor": "outlet", "symbol": "drop", "x": 0.75, "y": 0.5, "at": 4.1}
+    ]
+  },
+  {
+    "id": "flood-warning-system",
+    "topic": "Warning system",
+    "narration": "A warning system links river sensors, a central receiver, and public alerts. Its parts have different jobs but operate as one network.",
+    "title": "Three parts of a warning system",
+    "duration": 7,
+    "family": "cutaway",
+    "treatment": "exploded",
+    "symbol": "signal",
+    "parts": [
+      {"label": "Sensors", "detail": "Observe river level", "anchor": "river sensors", "symbol": "drop", "x": 0.2, "y": 0.5, "at": 0.4},
+      {"label": "Receiver", "detail": "Collect signals", "anchor": "central receiver", "symbol": "signal", "x": 0.5, "y": 0.5, "at": 2.0},
+      {"label": "Public alerts", "detail": "Reach people", "anchor": "public alerts", "symbol": "people", "x": 0.8, "y": 0.5, "at": 4.1}
+    ]
+  },
+  {
+    "id": "restoration-budget",
+    "topic": "Hypothetical restoration plan",
+    "narration": "The proposed restoration could cost between twelve and eighteen million dollars; the figure is an estimate, not an approved budget.",
+    "title": "An estimated cost, not a fixed bill",
+    "duration": 7,
+    "family": "range",
+    "treatment": "scale",
+    "low": 12,
+    "high": 18,
+    "unit": "million USD",
+    "qualifier": "Planning estimate",
+    "anchor": "between twelve and eighteen million dollars",
+    "symbol": "box",
+    "reveal_at": 1.2
+  },
+  {
+    "id": "crowd-estimate",
+    "topic": "Hypothetical eyewitness account",
+    "narration": "Witnesses estimated a crowd of four hundred to six hundred people in the square. The exact count is unknown.",
+    "title": "How many people were there?",
+    "duration": 7,
+    "family": "range",
+    "treatment": "context",
+    "low": 400,
+    "high": 600,
+    "unit": "people",
+    "qualifier": "Witness estimate",
+    "anchor": "four hundred to six hundred people",
+    "symbol": "people",
+    "reveal_at": 1.5
+  }
+]

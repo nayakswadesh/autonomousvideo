@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Schematic solar cross-section">
+  <defs>
+    <radialGradient id="body"><stop offset="0" stop-color="#fff5a6"/><stop offset="0.32" stop-color="#f9d15b"/><stop offset="0.68" stop-color="#ef903a"/><stop offset="1" stop-color="#9c3c23"/></radialGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fffde3"/><stop offset="0.55" stop-color="#fff2a2"/><stop offset="1" stop-color="#f8bc4d"/></radialGradient>
+  </defs>
+  <circle cx="256" cy="256" r="224" fill="#733728" stroke="#ffd481" stroke-width="8"/>
+  <circle cx="256" cy="256" r="204" fill="url(#body)"/>
+  <circle cx="256" cy="256" r="151" fill="none" stroke="#ffcf7f" stroke-width="18" opacity="0.75"/>
+  <circle cx="256" cy="256" r="102" fill="none" stroke="#ffe59e" stroke-width="14" opacity="0.85"/>
+  <circle cx="256" cy="256" r="67" fill="url(#core)" stroke="#fff6bf" stroke-width="7"/>
+  <g fill="none" stroke="#fff3b1" stroke-linecap="round" opacity="0.8">
+    <path d="M101 160c25 10 34 23 35 45M363 115c-16 14-20 33-16 49M380 347c-25-9-37-20-43-43M156 379c16-14 20-29 17-44" stroke-width="10"/>
+    <path d="M210 174c20 12 27 22 25 39M310 338c-20-12-28-23-27-40" stroke-width="7"/>
+  </g>
+</svg>

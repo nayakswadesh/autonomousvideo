@@ -1,0 +1,33 @@
+schema_version: 1
+title: The scale of our solar system
+topic: Comparing the planets with a familiar reference
+duration: 10
+width: 540
+height: 960
+fps: 24
+editorial_objective: Explain planetary size with a sourced visual comparison.
+hook: Worlds beyond our own
+hook_narration: Our world has giant neighbors.
+thesis: Planet sizes differ dramatically.
+payoff: A wider perspective on home.
+research:
+  requirements: [Attribute factual information and avoid implying a scale-accurate orbit diagram.]
+  sources:
+    - id: nasa-jupiter
+      title: NASA / Jupiter facts
+      url: https://science.nasa.gov/jupiter/facts/
+      accessed: '2026-09-10'
+      evidence_notes: Fixture reference for the statement that Jupiter is the largest planet; no live research is performed by the mock provider.
+  claims:
+    - kind: qualitative
+      id: jupiter-largest
+      text: Jupiter is the largest planet in the solar system.
+      source_ids: [nasa-jupiter]
+      confidence: 0.95
+      status: supported
+  subjects:
+    - id: jupiter
+      title: Jupiter
+      subtitle: The largest planet
+      claim_id: jupiter-largest
+      narration: Jupiter is our largest planet.

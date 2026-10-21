@@ -1,0 +1,160 @@
+schema_version: 1
+title: Five earthquake disasters by reported deaths
+topic: Five selected earthquake disasters ranked by source-specific reported deaths, from 5 to 1
+production_mode: full
+duration: 55
+expected_rank_count: 5
+width: 540
+height: 960
+fps: 24
+audience: Curious adults watching on a phone
+editorial_objective: Present a complete reported-death countdown while keeping uncertainty visible.
+hook: Strongest was not deadliest
+hook_narration: Five earthquakes. One measure—source-specific reported deaths.
+thesis: Human impact is different from earthquake magnitude.
+payoff: Behind every estimate was a life.
+audio_direction: Restrained documentary tone; no screams, collapse recordings, or sensational hits.
+research:
+  requirements:
+    - Separate magnitude from human impact.
+    - Include earthquake-triggered tsunami deaths where included in the cited estimate.
+    - Treat disputed historical totals as estimates.
+    - Do not describe this five-candidate fixture as a verified all-history ranking.
+  ranking:
+    metric: Source-specific reported fatalities, including missing where the cited source does
+    methodology: Sort the five documented candidate estimates descending, present ranks 5 to 1, and retain each source's caveats rather than treating the figures as directly comparable exact counts.
+    scope: Five selected earthquake disasters with cited fatality estimates; not an exhaustive global catalog
+    limitations: Historical documentation is uneven; Haiti is disputed; Tangshan and Haiyuan totals vary; this order is conditional on these selected source-specific values.
+  sources:
+    - id: usgs-facts
+      title: USGS / Earthquake facts
+      url: https://www.usgs.gov/programs/earthquake-hazards/earthquake-facts-earthquake-fantasy
+      accessed: '2026-09-10'
+      evidence_notes: USGS identifies the 1556 Shensi earthquake as the deadliest recorded and gives approximately 830,000 deaths.
+    - id: usgs-tangshan
+      title: USGS / Tangshan, six years later
+      url: https://www.usgs.gov/publications/tangshan-six-years-later
+      accessed: '2026-09-10'
+      evidence_notes: This USGS account uses an official death toll of 240,000; other summaries differ.
+    - id: usgs-haiyuan
+      title: USGS / Haiyuan impact record
+      url: https://earthquake.usgs.gov/earthquakes/eventpage/iscgem912687/impact
+      accessed: '2026-09-10'
+      evidence_notes: The impact description reports 200,000 deaths for the December 1920 event.
+    - id: eeri-haiti
+      title: EERI / Haiti earthquake overview
+      url: https://escweb.wr.usgs.gov/share/mooney/142.pdf
+      accessed: '2026-09-10'
+      evidence_notes: The paper reports a government total of 316,000 dead or missing and notes substantial disagreement.
+    - id: usgs-significant
+      title: USGS / Significant earthquakes
+      url: https://earthquake.usgs.gov/data/sign_eqs.pdf
+      accessed: '2026-09-10'
+      evidence_notes: The table lists 227,898 fatalities for the December 2004 northern Sumatra event, including tsunami impacts.
+  claims:
+    - {kind: numeric, id: shaanxi-toll, text: 'Around 830,000 deaths were reported for the 1556 Shaanxi earthquake.', value: 830000, unit: reported deaths, source_ids: [usgs-facts], confidence: 0.75, status: supported, caveat: 'Historical estimate; not an exact modern census.'}
+    - {kind: numeric, id: haiti-toll, text: 'The Haitian government reported 316,000 dead or missing after the 2010 earthquake.', value: 316000, lower: 70000, upper: 316000, unit: reported dead or missing, source_ids: [eeri-haiti], confidence: 0.4, status: disputed, caveat: 'Wide disagreement makes the rank sensitive to source selection.'}
+    - {kind: numeric, id: tangshan-toll, text: 'A USGS retrospective cites an official Tangshan death toll of 240,000.', value: 240000, unit: reported deaths, source_ids: [usgs-tangshan], confidence: 0.65, status: supported, caveat: 'Other accounts give different totals.'}
+    - {kind: numeric, id: sumatra-toll, text: 'The USGS table lists 227,898 fatalities for the 2004 Sumatra disaster.', value: 227898, unit: reported fatalities, source_ids: [usgs-significant], confidence: 0.75, status: supported, caveat: 'Includes the regional tsunami.'}
+    - {kind: numeric, id: haiyuan-toll, text: 'The USGS impact record reports approximately 200,000 deaths in the 1920 Haiyuan disaster.', value: 200000, unit: reported deaths, source_ids: [usgs-haiyuan], confidence: 0.65, status: supported, caveat: 'Alternative historical estimates exist.'}
+  subjects:
+    - {id: haiyuan, title: Haiyuan, subtitle: 'China / 1920', claim_id: haiyuan-toll, rank: 5, narration: 'Number five: Haiyuan, China, in 1920.'}
+    - {id: sumatra, title: Indian Ocean, subtitle: 'Earthquake and tsunami / 2004', claim_id: sumatra-toll, rank: 4, narration: 'Number four: the 2004 Indian Ocean earthquake and tsunami.'}
+    - {id: tangshan, title: Tangshan, subtitle: 'China / 1976', claim_id: tangshan-toll, rank: 3, narration: 'Number three: Tangshan, China, in 1976.'}
+    - {id: haiti, title: Haiti, subtitle: 'Haiti / 2010 • disputed total', claim_id: haiti-toll, rank: 2, narration: 'Number two, provisionally: Haiti, in 2010.'}
+    - {id: shaanxi, title: Shaanxi, subtitle: 'China / 1556 - historical estimate', claim_id: shaanxi-toll, rank: 1, narration: 'Number one: Shaanxi, China, in 1556.'}
+shots:
+  - kind: kinetic_title
+    id: hook
+    start: 0
+    duration: 5
+    title: Strongest was not deadliest
+    subtitle: Reported deaths, not magnitude
+    motion: reveal
+    voice_segments:
+      - {shot_id: hook, spoken_text: 'Five earthquakes. One measure—source-specific reported deaths.', offset: 0.2, estimated_duration: 3.2, pause_after: 0.2}
+  - kind: rank_reveal
+    id: rank-5
+    start: 5
+    duration: 8
+    title: Haiyuan
+    subtitle: China / 1920 - historical estimate
+    rank: 5
+    metric: ≈200,000 reported deaths
+    claim_ids: [haiyuan-toll]
+    source_ids: [usgs-haiyuan]
+    sound_cues: [{shot_id: rank-5, offset: 0.1, duration: 0.35}]
+    voice_segments:
+      - {shot_id: rank-5, spoken_text: 'Number five: Haiyuan, China—about 200,000 reported deaths.', offset: 0.3, estimated_duration: 4.2, pause_after: 0.2}
+  - kind: rank_reveal
+    id: rank-4
+    start: 13
+    duration: 8
+    title: Indian Ocean
+    subtitle: Earthquake and tsunami / 2004
+    rank: 4
+    metric: 227,898 reported fatalities
+    claim_ids: [sumatra-toll]
+    source_ids: [usgs-significant]
+    sound_cues: [{shot_id: rank-4, offset: 0.1, duration: 0.35}]
+    voice_segments:
+      - {shot_id: rank-4, spoken_text: 'Number four: the 2004 Indian Ocean earthquake and tsunami—227,898 reported fatalities.', offset: 0.3, estimated_duration: 5.0, pause_after: 0.2}
+  - kind: rank_reveal
+    id: rank-3
+    start: 21
+    duration: 8
+    title: Tangshan
+    subtitle: China / 1976 • source-specific figure
+    rank: 3
+    metric: ≈240,000 official deaths
+    claim_ids: [tangshan-toll]
+    source_ids: [usgs-tangshan]
+    sound_cues: [{shot_id: rank-3, offset: 0.1, duration: 0.35}]
+    voice_segments:
+      - {shot_id: rank-3, spoken_text: 'Number three: Tangshan, 1976—an official figure near 240,000.', offset: 0.3, estimated_duration: 4.5, pause_after: 0.2}
+  - kind: rank_reveal
+    id: rank-2
+    start: 29
+    duration: 8
+    title: Haiti, provisionally
+    subtitle: Haiti / 2010 • disputed total
+    rank: 2
+    metric: 316,000 dead or missing
+    claim_ids: [haiti-toll]
+    source_ids: [eeri-haiti]
+    sound_cues: [{shot_id: rank-2, offset: 0.1, duration: 0.35}]
+    voice_segments:
+      - {shot_id: rank-2, spoken_text: 'Number two, provisionally: Haiti, 2010—316,000 dead or missing, but disputed.', offset: 0.3, estimated_duration: 5.2, pause_after: 0.2}
+  - kind: rank_reveal
+    id: rank-1
+    start: 37
+    duration: 8
+    title: Shaanxi
+    subtitle: China / 1556 - historical estimate
+    rank: 1
+    metric: ≈830,000 reported deaths
+    claim_ids: [shaanxi-toll]
+    source_ids: [usgs-facts]
+    music_state: rise
+    sound_cues: [{shot_id: rank-1, offset: 0.1, duration: 0.4}]
+    voice_segments:
+      - {shot_id: rank-1, spoken_text: 'Number one: Shaanxi, 1556—around 830,000, a historical estimate, not a modern census.', offset: 0.3, estimated_duration: 5.8, pause_after: 0.2}
+  - kind: outro
+    id: payoff
+    start: 45
+    duration: 4
+    title: Behind every estimate was a life
+    subtitle: Context belongs beside every number
+    music_state: reduce
+    voice_segments:
+      - {shot_id: payoff, spoken_text: 'Behind every estimate was a life.', offset: 0.2, estimated_duration: 2.4, pause_after: 0.2}
+  - kind: source_card
+    id: sources
+    start: 49
+    duration: 6
+    title: Sources and caveats
+    subtitle: Five selected events - review before publication
+    source_ids: [usgs-haiyuan, usgs-significant, usgs-tangshan, eeri-haiti, usgs-facts]
+    music_state: silence
+    intentional_silence: true
+    motion: fade

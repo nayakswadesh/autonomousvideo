@@ -1,0 +1,50 @@
+schema_version: 1
+presentation:
+  theme: editorial
+  series_label: Earth / Field notes
+  source_labels:
+    s1: NOAA/NCEI / Earthquake database
+    s3: USGS / Magnitude comparison
+  shots:
+    - shot_id: shot-1
+      image_ref: disaster-illustration
+      eyebrow: A QUESTION OF HUMAN IMPACT
+      headline: Strongest was not deadliest
+      annotation: Magnitude ≠ human impact
+    - shot_id: shot-2
+      eyebrow: THE RANKING BASIS
+      annotation: Not earthquake magnitude
+    - shot_id: shot-3
+      image_ref: disaster-illustration
+      eyebrow: PROVISIONAL / WORKING ORDER
+      headline: Tangshan
+      annotation: China, 1976 / conservative estimate
+    - shot_id: shot-4
+      eyebrow: THE EVIDENCE IS NOT FINAL
+assets:
+  - kind: image
+    id: disaster-illustration
+    file: assets/earthquake-illustration.png
+    sha256: 75a6bc9c1386b6b22062c76acb76d3407344aa122bde1778080775dd54b1019e
+    prompt_file: assets/earthquake-illustration.prompt.md
+    provenance:
+      source: Built-in image generation; fictional illustrated city, not archival evidence
+      provider: built-in-imagegen
+      asset_id: earthquake-illustration
+      license_category: unknown
+      origin: generated
+  - kind: music
+    id: resonance
+    file: assets/resonance.mp3
+    sha256: 264be9c44c32419b6de70f0ac24c92f81401419419c8fb111b8e19e62261331b
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence_file: assets/resonance-license.md
+    trim_start: 0
+    provenance:
+      source: https://www.scottbuckley.com.au/library/resonance/
+      provider: Scott Buckley music library
+      asset_id: resonance
+      license_category: licensed
+      usage_restrictions: CC BY 4.0; include full credit in video description. See license evidence.
+      attribution: "'Resonance' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au"
+      origin: library

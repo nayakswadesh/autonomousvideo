@@ -1,0 +1,90 @@
+[
+  {
+    "id":"greenhouse-heat","topic":"Fictional greenhouse","narration":"In this fictional greenhouse, sunlight warms the floor, warm air rises, and the roof vent carries heat outside.","title":"Why the greenhouse vent matters","duration":7,"family":"causal","treatment":"chain",
+    "stages":[
+      {"label":"Sunlight","detail":"Warms the floor","anchor":"sunlight warms","symbol":"cloud","asset_concept":"sunlight","at":0.4},
+      {"label":"Warm air","detail":"Moves upward","anchor":"warm air rises","symbol":"cloud","at":2.2},
+      {"label":"Roof vent","detail":"Heat exits","anchor":"roof vent carries","symbol":"box","asset_concept":"air vent","at":4.1}
+    ]
+  },
+  {
+    "id":"message-mechanism","topic":"Illustrative message service","narration":"A message arrives, the router checks its destination, and the receiver gets the message.","title":"What makes a message arrive","duration":7,"family":"causal","treatment":"mechanism",
+    "stages":[
+      {"label":"Message","detail":"Enters the service","anchor":"message arrives","symbol":"box","asset_concept":"message","at":0.4},
+      {"label":"Router","detail":"Checks destination","anchor":"router checks","symbol":"box","asset_concept":"mechanism","at":2.3},
+      {"label":"Receiver","detail":"Gets the message","anchor":"receiver gets","symbol":"people","asset_concept":"receiver","at":4.4}
+    ]
+  },
+  {
+    "id":"bridge-change","topic":"Fictional river crossing","narration":"Before the bridge opened, deliveries detoured around the river. After the bridge opened, they crossed directly, shortening the trip.","title":"A bridge changes the route","duration":7,"family":"before_after","treatment":"split","visual_relation":"route","change":"The crossing becomes direct",
+    "before":{"label":"Long detour","detail":"Deliveries went around","anchor":"deliveries detoured","symbol":"box","asset_concept":"package","at":0.5},
+    "after":{"label":"Direct crossing","detail":"A shorter route","anchor":"crossed directly","symbol":"branch","asset_concept":"bridge","at":3.2}
+  },
+  {
+    "id":"streetlight-change","topic":"Illustrative lighting design","narration":"A conventional streetlight used grid electricity; the new solar streetlight uses a panel and battery, changing where its power comes from.","title":"Where the streetlight gets power","duration":7,"family":"before_after","treatment":"wipe","change":"Power source changes",
+    "before":{"label":"Grid electricity","detail":"Power from the grid","anchor":"grid electricity","symbol":"signal","asset_concept":"electricity","at":0.5},
+    "after":{"label":"Solar streetlight","detail":"Panel and battery","anchor":"solar streetlight","symbol":"box","asset_concept":"solar streetlight","at":3.0}
+  },
+  {
+    "id":"festival-teams","topic":"Fictional festival","narration":"At this fictional festival, volunteers greet visitors, technicians test the sound, and both teams make the opening run smoothly.","title":"Two teams prepare the opening","duration":7,"family":"parallel","treatment":"swimlanes","outcome":"Opening runs smoothly","outcome_anchor":"opening run","outcome_at":5.2,
+    "tracks":[
+      {"label":"Volunteers","detail":"Welcome visitors","anchor":"volunteers greet","symbol":"people","asset_concept":"team","at":0.6},
+      {"label":"Technicians","detail":"Test the sound","anchor":"technicians test","symbol":"signal","asset_concept":"mechanism","at":2.8}
+    ]
+  },
+  {
+    "id":"garden-efforts","topic":"Fictional community garden","narration":"For the community garden, neighbors collect seeds, planners set the beds, and both efforts bring the garden to life.","title":"Two efforts make one garden","duration":7,"family":"parallel","treatment":"converge","outcome":"Living garden","outcome_anchor":"garden to life","outcome_at":5.1,
+    "tracks":[
+      {"label":"Neighbors","detail":"Collect seeds","anchor":"neighbors collect","symbol":"people","asset_concept":"team","at":0.5},
+      {"label":"Planners","detail":"Set the beds","anchor":"planners set","symbol":"box","asset_concept":"layout plan","at":2.8}
+    ]
+  },
+  {
+    "id":"parcel-journey","topic":"Fictional parcel route","narration":"A fictional parcel leaves the depot, crosses the valley bridge, and reaches a house on the ridge.","title":"Following the parcel","duration":7,"family":"journey","treatment":"locator","geometry":"schematic",
+    "places":[
+      {"label":"Depot","detail":"Origin","anchor":"leaves the depot","symbol":"box","asset_concept":"depot","x":0.15,"y":0.65,"at":0.4},
+      {"label":"Valley bridge","detail":"Crossing","anchor":"valley bridge","symbol":"branch","asset_concept":"bridge","x":0.5,"y":0.35,"at":2.6},
+      {"label":"Ridge house","detail":"Destination","anchor":"house on the ridge","symbol":"box","asset_concept":"house","x":0.83,"y":0.53,"at":4.7}
+    ]
+  },
+  {
+    "id":"rail-journey","topic":"Fictional rail route","narration":"On this fictional rail route, a train departs the harbor, passes the forest stop, and arrives at the mountain terminal.","title":"A train across three places","duration":7,"family":"journey","treatment":"route","geometry":"schematic",
+    "places":[
+      {"label":"Harbor","detail":"Departure","anchor":"departs the harbor","symbol":"drop","asset_concept":"coast","x":0.11,"y":0.65,"at":0.5},
+      {"label":"Forest stop","detail":"Midpoint","anchor":"forest stop","symbol":"leaf","asset_concept":"forest","x":0.46,"y":0.31,"at":2.7},
+      {"label":"Mountain terminal","detail":"Arrival","anchor":"mountain terminal","symbol":"pin","asset_concept":"mountains","x":0.84,"y":0.53,"at":4.8}
+    ]
+  },
+  {
+    "id":"lamp-scale","topic":"Fictional lighting plan","narration":"In this fictional room plan, a desk uses 1 lamp, a classroom uses 10 lamps, and a theater uses 100 lamps.","title":"Lighting needs at three scales","duration":7,"family":"scale_ladder","treatment":"bars","unit":"lamps",
+    "items":[
+      {"label":"Desk","detail":"Small space","anchor":"1 lamp","symbol":"box","asset_concept":"lamp","at":0.5,"value":1},
+      {"label":"Classroom","detail":"Mid-size space","anchor":"10 lamps","symbol":"box","asset_concept":"lamp","at":2.5,"value":10},
+      {"label":"Theater","detail":"Large space","anchor":"100 lamps","symbol":"box","asset_concept":"lamp","at":4.5,"value":100}
+    ]
+  },
+  {
+    "id":"battery-scale","topic":"Illustrative battery plan","narration":"For an illustrative battery plan, a small device holds 2 kilowatt-hours, a workshop holds 20, and a depot holds 200.","title":"Battery capacity steps upward","duration":7,"family":"scale_ladder","treatment":"zoom","unit":"kWh",
+    "items":[
+      {"label":"Small device","detail":"First level","anchor":"2 kilowatt-hours","symbol":"box","asset_concept":"battery","at":0.5,"value":2},
+      {"label":"Workshop","detail":"Next level","anchor":"workshop holds 20","symbol":"box","asset_concept":"battery","at":2.7,"value":20},
+      {"label":"Depot","detail":"Final level","anchor":"depot holds 200","symbol":"box","asset_concept":"battery","at":4.8,"value":200}
+    ]
+  },
+  {
+    "id":"welcoming-path","topic":"Fictional neighborhood","narration":"For a fictional neighborhood project, trees cool the street, lights improve visibility, and benches invite people to pause; together they create a more welcoming path.","title":"Three changes reshape a path","duration":7,"family":"synthesis","treatment":"mosaic","takeaway":"A more welcoming path","takeaway_anchor":"welcoming path","takeaway_at":5.6,
+    "inputs":[
+      {"label":"Trees","detail":"Cooling shade","anchor":"trees cool","symbol":"leaf","asset_concept":"tree","at":0.4},
+      {"label":"Lights","detail":"Visibility","anchor":"lights improve","symbol":"signal","asset_concept":"light","at":2.0},
+      {"label":"Benches","detail":"A place to pause","anchor":"benches invite","symbol":"box","asset_concept":"seating","at":3.9}
+    ]
+  },
+  {
+    "id":"storm-response","topic":"Illustrative storm warning","narration":"To keep an illustrative storm warning useful, a sensor tracks conditions, a message reaches residents, and teams guide them; together these steps support a timely response.","title":"How a warning becomes useful","duration":7,"family":"synthesis","treatment":"convergence","takeaway":"Timely response","takeaway_anchor":"timely response","takeaway_at":5.6,
+    "inputs":[
+      {"label":"Sensor","detail":"Observes","anchor":"sensor tracks","symbol":"signal","asset_concept":"temperature","at":0.4},
+      {"label":"Message","detail":"Reaches people","anchor":"message reaches","symbol":"box","asset_concept":"message","at":2.0},
+      {"label":"Teams","detail":"Guide action","anchor":"teams guide","symbol":"people","asset_concept":"team","at":3.9}
+    ]
+  }
+]

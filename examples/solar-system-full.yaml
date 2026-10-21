@@ -1,0 +1,98 @@
+schema_version: 1
+title: Jupiter in perspective
+topic: A short sourced portrait of Jupiter as the solar system's largest planet
+production_mode: full
+duration: 45
+width: 540
+height: 960
+fps: 24
+audience: Curious adults watching on a phone
+editorial_objective: Explore one sourced planetary fact through a restrained visual essay.
+hook: Worlds beyond our own
+hook_narration: Our world has giant neighbors.
+thesis: Jupiter is the solar system's largest planet.
+payoff: Scale changes how home feels.
+audio_direction: Curious and spacious; avoid cinematic battle scoring.
+research:
+  requirements: [Attribute factual information and avoid implying a scale-accurate orbit diagram.]
+  sources:
+    - id: nasa-jupiter
+      title: NASA / Jupiter facts
+      url: https://science.nasa.gov/jupiter/facts/
+      accessed: '2026-09-10'
+      evidence_notes: Fixture reference for the statement that Jupiter is the largest planet; no live research is performed by the mock provider.
+  claims:
+    - kind: qualitative
+      id: jupiter-largest
+      text: Jupiter is the largest planet in the solar system.
+      source_ids: [nasa-jupiter]
+      confidence: 0.95
+      status: supported
+  subjects:
+    - id: jupiter
+      title: Jupiter
+      subtitle: The largest planet
+      claim_id: jupiter-largest
+      narration: Jupiter is our largest planet.
+shots:
+  - kind: kinetic_title
+    id: hook
+    start: 0
+    duration: 7
+    title: Worlds beyond our own
+    subtitle: A sourced planetary portrait
+    voice_segments:
+      - {shot_id: hook, spoken_text: 'Our world has giant neighbors.', offset: 0.3, estimated_duration: 2.4, pause_after: 0.2}
+  - kind: hero_image
+    id: jupiter
+    start: 7
+    duration: 8
+    title: Jupiter
+    subtitle: Our largest planetary neighbor
+    claim_ids: [jupiter-largest]
+    source_ids: [nasa-jupiter]
+    motion: ken_burns
+    voice_segments:
+      - {shot_id: jupiter, spoken_text: 'Jupiter is the largest planet in our solar system.', offset: 0.3, estimated_duration: 3.8, pause_after: 0.2}
+  - kind: big_metric
+    id: scale
+    start: 15
+    duration: 8
+    title: In our solar system
+    subtitle: A qualitative comparison from NASA
+    metric: LARGEST PLANET
+    claim_ids: [jupiter-largest]
+    source_ids: [nasa-jupiter]
+    motion: magnify
+    voice_segments:
+      - {shot_id: scale, spoken_text: 'Largest is a simple word for an enormous change in scale.', offset: 0.3, estimated_duration: 4.4, pause_after: 0.2}
+  - kind: kinetic_title
+    id: context
+    start: 23
+    duration: 8
+    title: Comparison needs context
+    subtitle: This is not a scale-accurate orbit diagram
+    claim_ids: [jupiter-largest]
+    source_ids: [nasa-jupiter]
+    motion: push
+    voice_segments:
+      - {shot_id: context, spoken_text: 'A visual comparison can explain scale without pretending to be an exact orbit diagram.', offset: 0.3, estimated_duration: 5.6, pause_after: 0.2}
+  - kind: outro
+    id: payoff
+    start: 31
+    duration: 7
+    title: Scale changes how home feels
+    subtitle: Keep the source beside the wonder
+    music_state: reduce
+    voice_segments:
+      - {shot_id: payoff, spoken_text: 'Scale changes how home feels.', offset: 0.3, estimated_duration: 2.4, pause_after: 0.2}
+  - kind: source_card
+    id: sources
+    start: 38
+    duration: 7
+    title: Source
+    subtitle: NASA Jupiter facts • review copy
+    source_ids: [nasa-jupiter]
+    intentional_silence: true
+    music_state: silence
+    motion: fade
